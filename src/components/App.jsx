@@ -1,3 +1,5 @@
+
+
 export  function App() { 
   return (
     <>
@@ -6,7 +8,7 @@ export  function App() {
           <img src="https://unavatar.io/veggeta777" alt="avatar jhon wick" />
           <div>
             <strong>Jhon Wick</strong>
-            <span>@jhonwick</span>
+            <span >@jhonwick</span>
           </div>
         </header>
 
