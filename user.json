@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+        "userName": "elonmusk",
+        "name": "Elon Musk",
+        "isFollowing": true
+        },
+        {
+        "userName": "jeffbezos",
+        "name": "Jeff Bezos",
+        "isFollowing": true
+        }
+    ]
+}
