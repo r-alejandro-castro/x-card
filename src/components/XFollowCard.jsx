@@ -1,4 +1,4 @@
-export default function XFollowCard({userName, name, isFollowing}) {
+export default function XFollowCard({children ,userName, name, isFollowing}) {
  const imageSrc = `https://unavatar.io/${userName}`
 
   return (
@@ -9,7 +9,7 @@ export default function XFollowCard({userName, name, isFollowing}) {
           className='tw-followCard-avatar'
           src={imageSrc} alt={userName} />
           <div className='tw-followCard-info'>
-            <strong>{name}</strong>
+            <strong>{children}</strong>
             <span className='tw-followCard-infoUserName'>@{userName}</span>
           </div>
         </header>

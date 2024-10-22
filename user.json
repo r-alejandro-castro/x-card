@@ -1,14 +1,19 @@
 {
     "users": [
         {
-        "userName": "elonmusk",
-        "name": "Elon Musk",
-        "isFollowing": true
+            "userName": "elonmusk",
+            "name": "Elon Musk",
+            "isFollowing": true
         },
         {
-        "userName": "jeffbezos",
-        "name": "Jeff Bezos",
-        "isFollowing": true
+            "userName": "jeffbezos",
+            "name": "Jeff Bezos",
+            "isFollowing": true
+        },
+        {
+            "userName": "rodolfocastro",
+            "name": "Rodolfo Castro",
+            "isFollowing": false
         }
     ]
 }

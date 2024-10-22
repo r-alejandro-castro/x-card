@@ -2,7 +2,6 @@ import './App.css'
 import XFollowCard from './components/XFollowCard'
 import { users } from '../user.json'
 
-
 export  function App() { 
   return (
     <section className='App'>
@@ -13,7 +12,7 @@ export  function App() {
         name={user.name}
         isFollowing={user.isFollowing}
         >
-          {user.name}
+          {user.name} 
         </XFollowCard>
       ))}
     </section>
