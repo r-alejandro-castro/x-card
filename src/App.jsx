@@ -10,7 +10,7 @@ export  function App() {
         key={user.userName}
         userName={user.userName}
         name={user.name}
-        isFollowing={user.isFollowing}
+        initialIsFollowing={user.isFollowing}
         >
           {user.name} 
         </XFollowCard>

@@ -1,5 +1,21 @@
-export default function XFollowCard({children ,userName, name, isFollowing}) {
- const imageSrc = `https://unavatar.io/${userName}`
+import { useState, useEffect } from 'react'
+
+export default function XFollowCard({children, userName, initialIsFollowing}) {
+  const imageSrc = `https://unavatar.io/${userName}`
+  
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
+
+  const text = isFollowing ? 'Siguiendo' : 'Seguir'
+
+  console.log('[TwitterFollowCard] render with userName: ', userName)
+
+  const buttonClassName = isFollowing
+  ? 'tw-followCard-button is-following'
+  : 'tw-followCard-button'
+
+  const handleClick = () => {
+    setIsFollowing(!isFollowing)
+  }
 
   return (
     <div>
@@ -15,12 +31,12 @@ export default function XFollowCard({children ,userName, name, isFollowing}) {
         </header>
 
         <aside>
-          <button className='tw-followCard-button is-followingw'>
-            Seguir
+          <button className={buttonClassName} onClick={handleClick}>
+            <span className='tw-followCard-text'>{text}</span>
+            <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
           </button>
         </aside>
       </article>
     </div>
   )
 }
-

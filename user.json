@@ -3,7 +3,7 @@
         {
             "userName": "elonmusk",
             "name": "Elon Musk",
-            "isFollowing": true
+            "isFollowing": false
         },
         {
             "userName": "jeffbezos",
